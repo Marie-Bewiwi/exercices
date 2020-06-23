@@ -1,0 +1,25 @@
+/* Appliquer à la classe "header" une largeur de 100% et une hauteur de 300px.*/
+/*Pour la classe "header-title" une marge du haut de 100px.*/
+
+.header {
+background-image: url(ciel.jpg);
+width: 100%;
+height:300px;
+position: absolute;
+}
+
+.header-title{
+    margin-top: 100px;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    text-align: center;
+
+}
+
+p{
+    text-align: center;
+    color:white;
+}
