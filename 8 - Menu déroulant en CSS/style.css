@@ -1,9 +1,64 @@
-.nav > li {
-    display: inline-block;
-    border : 1px solid black;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-size: 100%;
+nav {
+width:50%;
+margin: 0px;
+top: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.deroule {
+  display: none;
+  width: 100%;
+  position : absolute;
+
+}
+
+nav ul li {
+  float:left;
+  width: 25%;
+  position: relative;
+}
+
+nav > ul li:hover .deroule{
+ display : block;
+ background-color: lightslategray;
+ border-bottom:lightseagreen;
+}
+
+.deroule > li:hover {
+background-color: skyblue;
+border-bottom : 2px solid lightseagreen;
+
+}
+ 
+.deroule li {
+  float: none;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.deroule a {
+  color:white;
+}
+
+nav a {
+  display : block;
+  text-decoration: none;
+  color: slategrey;
+}
+nav  li:hover {
+  border-bottom: 3px solid lightseagreen;
+}
+
+nav li {
+    text-align: center;
+    
   }
