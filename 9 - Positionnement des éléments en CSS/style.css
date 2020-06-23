@@ -1,0 +1,36 @@
+*,*:before,:after{
+    box-sizing: border-box;
+}
+
+body {
+    width:50%;
+}
+.article {
+background-color: rgb(112, 124, 136);
+width: 300px;
+height: 800px;
+position: absolute;
+left:50%;
+transform: translateX(-50%); /* Permet d'aligner l'élément sur l'axe X ( gauche droite) avec lui même,définit dans le "left" ou "right"*/
+margin-top:2px;
+}
+
+.details {
+    background-color:skyblue;
+    width: calc(300px - 80px);
+    border: 1px solid black;
+    position: absolute;
+    top : 100px;
+    left: 80px;
+}
+
+.fix {
+background-color: skyblue;
+position: fixed;
+bottom:0;
+right:0;
+padding-right: 3%;
+padding-bottom: 1%;
+
+
+}
