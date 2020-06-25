@@ -1,0 +1,44 @@
+/*Indications :
+1) Appliquez une bordure solid de couleur rgba(0,0,0,0.3) et un arrondi de 10px. Ajoutez les marges qui conviennent et une hauteur de ligne à 1.5.
+2) Donnez au titre une bordure du bas pointillée et une police.
+3) Pour la classe "detail-article" appliquez un alignement centré de texte pour centrer le lien.
+4) Appliquez la couleur #7b7b7b, une taille de 1em, et un alignement justifié au paragraphe fils de la classe "detail-article".
+5) Le lien avec une bordure de forme elliptique 200px/50px.*/
+
+
+.article {
+    border: 1px rgba(0,0,0,0.3) solid;
+    border-radius: 10px;
+    line-height: 1.5em;
+    margin-top: 10%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom:25%;
+    padding-left: 5px;
+    padding-right: 2px;
+    padding-bottom:20px;
+}
+
+    .titre-article {
+        border-bottom: 1px dashed rgba(0,0,0,0.3);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+        .detail-article {
+            text-align: center;
+         }
+
+         .detail-article > p {
+            color:#7b7b7b;
+            text-align: justify;
+            font-size:1em;
+         }
+    
+        a {
+            border:10px solid #89A1EF;
+            border-radius:200px/50px;
+            color:white;
+            background-color: #89A1EF ;
+            text-decoration: none;
+
+        }
