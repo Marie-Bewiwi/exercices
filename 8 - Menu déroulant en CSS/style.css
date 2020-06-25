@@ -1,10 +1,17 @@
 /* Reset*/
+nav {
+  margin-left: 20px;
+}
+
 ul{
-  padding:0;
+  padding:0; /*par défaut, les navigateurs mettent des paddings aux ul*/
 }
 a{
   text-decoration: none;
   color:slategray;
+  display:block; /* par défaut, les a sont en inline*/
+                /*inline=prend la taille du contenu, ne prend pas en compte width ou height, donc on le passe en block pour qu'il prenne tout le 
+                parent*/
 }
 
 /*Composant*/
@@ -20,25 +27,27 @@ a{
   }
     .deroule{
       background-color: lightslategray;
-      height: 0px;
-      transition: all 0.5s ease;
+      height: 0px; /*on définit la hauteur du sous menu à 0 pour qu'elle soit "invisible", pour l'instant*/
+      transition: height 0.5s ease;
+      /* transition: propriété sur laquelle elle s'applique, ici la hauteur définie dans le .services:hover .deroule , la durée et la méthode*/
     }
     .deroule > li {
       display: flex; /* utilisé pour centrer les a dans les li
                       en combinaison à a-i et j-c */
       align-items: center;
       justify-content: center;
+      /* pour centrer au milieu du bloc, horiz et vert */
       list-style-type: none;
       border-top: 1px solid white;
-      height:100px;
-      box-sizing: border-box;
+      height:100px; /* .deroule fait 300px, donc chaque enfant, ici li, fait 1/3 de 300 donc 100px*/
+      box-sizing: border-box; /*pour que width et height prenne en compte border et padding*/
     }
       .deroule a {
         color:white;
       }
   
 /*Etat*/
-.menu > li:hover {
+.menu > li:hover > a{
 border-bottom:2px solid teal;
 }
 .deroule li:hover {
@@ -48,4 +57,4 @@ border-bottom:2px solid teal;
 /*Apparition du menu déroulant*/
 .services:hover .deroule {
   height:300px;
-}
+} /* la taille définie ici s'applique seulement avec le :hover, et la transition*/
