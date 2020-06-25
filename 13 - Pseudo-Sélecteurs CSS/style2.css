@@ -1,8 +1,8 @@
 /*Travail à faire :
-1) Changer la taille du titre à "1.5em" en affichant la première lettre de chaque mot en capitale.
-2) Enlever la bordure pour le tableau.
-3) Ajouter une marge interne de 10px et un alignement centré pour tous les cellules "th et td".
-4) Cibler  la deuxième balise "th" de la première "tr" qui contient le mois du planning pour lui changer la taille en "2em" et la couleur en bleu.
+1) Changer la taille du titre à "1.5em" en affichant la première lettre de chaque mot en capitale. v
+2) Enlever la bordure pour le tableau.v
+3) Ajouter une marge interne de 10px et un alignement centré pour tous les cellules "th et td".v
+4) Cibler  la deuxième balise "th" de la première "tr" qui contient le mois du planning pour lui changer la taille en "2em" et la couleur en bleu.v
 5) Mettre en  background "#FCB941"  tous lignes "tr" du tbody qui viennent en positions paires et en background "#F1654C" les lignes qui viennent en positions impaires (Utiliser le pseudo classe "nth-child").
 6) Donner à la première cellule de chaque ligne en position impaire ,un background "#7E3661" et une couleur "#fff".(Utiliser les pseudo classes nth-child et first-child)
 7) Donner à la première cellule de chaque ligne en position paire ,un background "#888888" et une couleur "#fff".(Utiliser les pseudo classes nth-child et first-child)
@@ -23,7 +23,7 @@ th td {
     padding: 10px 10px 10px 10px;
     text-align: center;
 }
-thead > tr > :nth-child(2) {
+tr:nth-of-type(1) th:nth-of-type(2){
     size: 2em;
-    background-color:blue;
+    color:blue;
 }
