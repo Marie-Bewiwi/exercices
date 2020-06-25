@@ -30,3 +30,11 @@ a{
       .deroule a {
         color:white;
       }
+  
+/*Etat*/
+.menu > li:hover {
+border-bottom:2px solid teal;
+}
+.deroule li:hover {
+  background-color: skyblue;
+}
