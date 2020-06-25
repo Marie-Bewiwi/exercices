@@ -9,11 +9,12 @@ nav ul {
   padding: 0;
 }
 
-.deroule {
-  display: none;
+li:hover > .deroule {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
   width: 100%;
   position : absolute;
-
 }
 
 nav ul li {
@@ -23,7 +24,8 @@ nav ul li {
 }
 
 nav > ul li:hover .deroule{
- display : block;
+ visibility :visible;
+ opacity: 1;
  background-color: lightslategray;
  border-bottom:lightseagreen;
 }
@@ -60,5 +62,6 @@ nav  li:hover {
 
 nav li {
     text-align: center;
-    
   }
+
+ul:hover {}
