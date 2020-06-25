@@ -20,12 +20,17 @@ a{
   }
     .deroule{
       background-color: lightslategray;
+      height: 0px;
     }
     .deroule > li {
+      display: flex; /* utilisé pour centrer les a dans les li
+                      en combinaison à a-i et j-c */
+      align-items: center;
+      justify-content: center;
       list-style-type: none;
-      padding-top:25px;
-      padding-bottom: 25px;
       border-top: 1px solid white;
+      height:100px;
+      box-sizing: border-box;
     }
       .deroule a {
         color:white;
@@ -37,4 +42,9 @@ border-bottom:2px solid teal;
 }
 .deroule li:hover {
   background-color: skyblue;
+}
+
+/*Apparition du menu déroulant*/
+.deroule:hover {
+  height:300px;
 }
