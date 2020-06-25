@@ -21,6 +21,7 @@ a{
     .deroule{
       background-color: lightslategray;
       height: 0px;
+      transition: all 0.5s ease;
     }
     .deroule > li {
       display: flex; /* utilisé pour centrer les a dans les li
@@ -45,6 +46,6 @@ border-bottom:2px solid teal;
 }
 
 /*Apparition du menu déroulant*/
-.deroule:hover {
+.services:hover .deroule {
   height:300px;
 }
