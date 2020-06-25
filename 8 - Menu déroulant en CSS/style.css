@@ -1,67 +1,32 @@
-nav {
-width:50%;
-margin: 0px;
-top: 0px;
+/* Reset*/
+ul{
+  padding:0;
 }
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li:hover > .deroule {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-  width: 100%;
-  position : absolute;
-}
-
-nav ul li {
-  float:left;
-  width: 25%;
-  position: relative;
-}
-
-nav > ul li:hover .deroule{
- visibility :visible;
- opacity: 1;
- background-color: lightslategray;
- border-bottom:lightseagreen;
-}
-
-.deroule > li:hover {
-background-color: skyblue;
-border-bottom : 2px solid lightseagreen;
-
-}
- 
-.deroule li {
-  float: none;
-  width: 100%;
-  text-align: center;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-}
-
-.deroule a {
-  color:white;
-}
-
-nav a {
-  display : block;
+a{
   text-decoration: none;
-  color: slategrey;
-}
-nav  li:hover {
-  border-bottom: 3px solid lightseagreen;
+  color:slategray;
 }
 
-nav li {
+/*Composant*/
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+  .menu > li {
+    list-style-type: none;
+    width:20%;
     text-align: center;
   }
-
-ul:hover {}
+    .deroule{
+      background-color: lightslategray;
+    }
+    .deroule > li {
+      list-style-type: none;
+      padding-top:25px;
+      padding-bottom: 25px;
+      border-top: 1px solid white;
+    }
+      .deroule a {
+        color:white;
+      }
