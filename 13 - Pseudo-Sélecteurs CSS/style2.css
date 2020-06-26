@@ -27,3 +27,16 @@ tr:nth-of-type(1) th:nth-of-type(2){
     size: 2em;
     color:blue;
 }
+
+tbody tr:nth-child(even) {
+    background-color: #FCB941;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f1654C;
+}
+
+tr:nth-child(odd)  td:first-child{
+    background-color: #7E3661;
+    color:#fff;
+}
