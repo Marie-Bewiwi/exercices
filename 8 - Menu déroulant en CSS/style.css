@@ -26,6 +26,7 @@ a{
     text-align: center;
   }
     .deroule{
+      overflow: hidden;
       background-color: lightslategray;
       height: 0px; /*on définit la hauteur du sous menu à 0 pour qu'elle soit "invisible", pour l'instant*/
       transition: height 0.5s ease;
