@@ -13,6 +13,7 @@ Le résultat à obtenir est présenté dans le fichier resultat.png*/
 
 caption {
     font-size: 1.5em;
+    text-transform: capitalize;
 }
 
 table {
@@ -39,4 +40,21 @@ tbody tr:nth-child(odd) {
 tr:nth-child(odd)  td:first-child{
     background-color: #7E3661;
     color:#fff;
+}
+
+tr:nth-child(even) td:first-child{
+
+    background-color: #888888;
+    color:#ffffff
+
+}
+tr:nth-child(odd) td:last-child{
+    background-color: #8870ff;
+    color: #fff;
+}
+
+th[rowspan]:last-child {
+
+    border-right: none;
+    border-top: none;
 }
