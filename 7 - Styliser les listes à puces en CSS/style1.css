@@ -1,7 +1,7 @@
 
 ul{
     list-style: none;
-    counter-reset: (count);
+    
 }
 
 .list1 > li:before {
@@ -25,13 +25,14 @@ ul{
     margin-right: 5px;
 }
 
-.list3 li{
+.list3{
     margin-bottom: 5px;
-    counter-increment: count;
+    counter-reset:count;
 }
         
 .list3 li:before{
-    content : counter(count); /* pour afficher le compteur "count" défini dans le "ul"*/
+    counter-increment: count;
+    content : counter(count); /* pour afficher le compteur "count" défini dans le "ul list.3"*/
     display: inline-block;
     width: 20px;
     height: 20px;
