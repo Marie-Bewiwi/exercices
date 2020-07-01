@@ -57,6 +57,6 @@ li:hover:nth-of-type(4)~#slidebar /* Quand li est hover, on applique les prop su
     left:75%;
 }
 
-li:focus-within~div {
+li:focus-within~#slidebar {
     border-color: red;
     }
