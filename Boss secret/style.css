@@ -1,0 +1,62 @@
+.menu {
+   display: flex;
+    flex-direction: row; 
+    list-style-type: none;
+    width: 50%;
+    background-color: skyblue;
+    position: relative;
+}
+
+
+
+
+li {
+    transition: background-color 0.3s linear;
+    width:25%;
+    text-align: center;
+    
+}
+li>a{
+    text-decoration: none;
+    display:block;
+}
+
+li:hover{
+    background-color: blue;
+}
+a:focus {
+    background-color: cornflowerblue;
+    color:white;
+}
+
+a{
+    padding: 15px;
+}
+
+#slidebar{
+    width:25%;
+    border: 2px solid greenyellow;
+    position: absolute;
+    box-sizing: border-box; /*permet d'inclure la bordure dans le calcul du width*/
+    left:0;
+    bottom:-4px;
+    transition: left 0.3s ease;
+
+}
+
+li:hover:nth-of-type(1)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
+    left:0px;
+}
+li:hover:nth-of-type(2)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
+    left:25%;
+}
+li:hover:nth-of-type(3)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
+    left:50%;
+}
+li:hover:nth-of-type(4)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
+    left:75%;
+}
+
+li:focus-within~div {
+    border-color: red;
+    }
