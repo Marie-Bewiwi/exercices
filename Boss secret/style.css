@@ -54,8 +54,18 @@ li:hover:nth-of-type(4)~#slidebar /* Quand li est hover, on applique les prop su
     left:75%;
 }
 
-!important li:focus-within~#slidebar {
-    border:2px solid greenyellow;
-    position:absolute;
-    width:25%;
-    }
+ li:focus-within:nth-of-type(1)~#slidebar {
+  left:0px;
+ }
+
+ li:focus-within:nth-of-type(2)~#slidebar {
+  left:25%;
+}
+
+li:focus-within:nth-of-type(3)~#slidebar {
+  left:50%;
+}
+
+li:focus-within:nth-of-type(4)~#slidebar {
+  left:75%;
+}
