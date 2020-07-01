@@ -7,9 +7,6 @@
     position: relative;
 }
 
-
-
-
 li {
     transition: background-color 0.3s linear;
     width:25%;
@@ -57,6 +54,8 @@ li:hover:nth-of-type(4)~#slidebar /* Quand li est hover, on applique les prop su
     left:75%;
 }
 
-li:focus-within~#slidebar {
-    border-color: red;
+!important li:focus-within~#slidebar {
+    border:2px solid greenyellow;
+    position:absolute;
+    width:25%;
     }
