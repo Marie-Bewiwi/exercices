@@ -1,0 +1,27 @@
+#switch {
+  opacity: 0; /*Pour rendre la checkbox native invisible*/
+}
+
+#switch ~ label::after {
+  display: inline-block;
+  content:"oui";
+  background-color:green;
+  width:60px;
+  height: 20px;
+  transition: background-color 0.2s linear;
+}
+
+#switch:checked ~ label::after {
+  display: inline-block;
+  content:"non";
+  background-color: red;
+  width:60px;
+  height: 20px;
+  transition: background-color 0.2s linear;
+}
+
+#toggle {
+  position: relative;
+  border: 3px blue solid;
+  background-color: royalblue;
+}
