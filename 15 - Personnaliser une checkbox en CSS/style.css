@@ -1,27 +1,82 @@
+label { 
+  display: block;
+  width:80px;
+  height: 20px;
+
+}
+
+/* 
+David: y'a un espace entre le haut de ta page et ton "label"
+Tu peux utiliser "display: none" si tu veux l'enlever au lieu de "opacity: 0"
+*/
 #switch {
   opacity: 0; /*Pour rendre la checkbox native invisible*/
 }
 
-#switch ~ label::after {
-  display: inline-block;
+/* David: propriétés par défaut */
+#switch ~ label::before {
+  display:block;
   content:"oui";
   background-color:green;
-  width:60px;
+  width:80px;
   height: 20px;
   transition: background-color 0.2s linear;
+  text-align: right;
+  padding-top:10px;
+  cursor: pointer;
+  border-radius: 20%;
+  color: white;
+  
 }
 
-#switch:checked ~ label::after {
-  display: inline-block;
+/* 
+David: propriétés qui changent quand "#switch" est "checked
+Tu peux simplifier ton code en ne modifiant que les propriétés qui changent et que tu "override"
+*/
+#switch:checked ~ label::before {
+  display: block;
   content:"non";
   background-color: red;
-  width:60px;
+  width:80px;
   height: 20px;
   transition: background-color 0.2s linear;
+  text-align: left;
+  padding-top: 10px;
+  cursor: pointer;
+  border-radius: 20%;
+  color:white;
 }
 
-#toggle {
-  position: relative;
-  border: 3px blue solid;
-  background-color: royalblue;
+#switch ~ label::after {
+  content:"";
+  position: absolute;
+  display: block;
+  background-color: white;
+  width: 30px;
+  height:30px;
+  left:0;
+  right:40px;
+  top:14px;
+  border: 2px grey solid;
+  border-radius: 50%;
+  transition: left 0.3s ease-in ;
+}
+
+/* 
+David: propriétés qui changent quand "#switch" est "checked
+Même chose que pour "::before"
+*/
+#switch:checked ~ label::after {
+  content:"";
+  position: absolute;
+  display: block;
+  background-color: white;
+  width: 30px;
+  height:30px;
+  left:60px;
+  right:0px;
+  top:14px;
+  border: 2px grey solid;
+  border-radius: 50%;
+  transition: left 0.3s ease-in ;
 }
