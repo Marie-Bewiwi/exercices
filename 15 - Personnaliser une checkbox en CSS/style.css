@@ -13,15 +13,16 @@ label {
   display:block;
   content:"OUI";
   background-color:green;
-  width:80px;
-  height: 20px;
+  width:100px;
+  height: 35px;
   padding-left : 3px;
   padding-right:3px;
+  padding-top: 5px;
   transition: background-color 0.2s linear;
   text-align: right;
-  padding-top:10px;
+  padding-top:20px;
   cursor: pointer;
-  border-radius: 32%;
+  border-radius: 30px;
   color: white;
   font-weight: bold;
 }
@@ -36,9 +37,9 @@ label {
   position: absolute;
   display: block;
   background-color: white;
-  width: 30px;
-  height:30px;
-  top:8px;
+  width: 53px;
+  height:53px;
+  top:10px;
   left:2px; /* left: Positionné à 0px à gauche du dernier élément positionné */
   border: 2px grey solid;
   border-radius: 50%;

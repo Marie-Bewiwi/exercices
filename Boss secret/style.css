@@ -41,19 +41,6 @@ a{
 
 }
 
-li:hover:nth-of-type(1)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
-    left:0px;
-}
-li:hover:nth-of-type(2)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
-    left:25%;
-}
-li:hover:nth-of-type(3)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
-    left:50%;
-}
-li:hover:nth-of-type(4)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
-    left:75%;
-}
-
  li:focus-within:nth-of-type(1)~#slidebar {
   left:0px;
  }
@@ -69,3 +56,17 @@ li:focus-within:nth-of-type(3)~#slidebar {
 li:focus-within:nth-of-type(4)~#slidebar {
   left:75%;
 }
+
+li:hover:nth-of-type(1)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
+    left:0px;
+}
+li:hover:nth-of-type(2)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
+    left:25%;
+}
+li:hover:nth-of-type(3)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
+    left:50%;
+}
+li:hover:nth-of-type(4)~#slidebar /* Quand li est hover, on applique les prop suivantes au slidebar qui est le frère de li */ {
+    left:75%;
+}
+
