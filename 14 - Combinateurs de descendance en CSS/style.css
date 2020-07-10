@@ -7,19 +7,19 @@
 Le résultat à obtenir se trouve dans le fichier resultat.png*/
 
 
-.article > p {
+.article  p {
     margin-left: 20px;
 }
 
-h2~p {
+h2+p {
     background-color: yellow;
 
 }
 
-h2+p {
+h2~p {
     border: 2px solid black;
 }
 
-li p {
+li > p {
     color:green;
 }
