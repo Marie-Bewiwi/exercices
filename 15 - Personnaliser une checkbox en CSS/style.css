@@ -26,13 +26,13 @@ label {
   color: white;
   font-weight: bold;
 }
-#switch:checked ~ label::before {
+#switch:checked ~ label::before { /*Le design une fois qu'on switch*/
   content:"NON";
   background-color: red;
   text-align: left;
 }
   
-#switch ~ label::after {
+#switch ~ label::after { /*Le design du rond*/
   content:"";
   position: absolute;
   display: block;
@@ -45,6 +45,6 @@ label {
   border-radius: 50%;
   transition: left 0.3s ease-in ;
 }
-#switch:checked ~ label::after {
+#switch:checked ~ label::after { /*La position une fois que c'est switch*/
   left:66px;
 } 
