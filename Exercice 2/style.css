@@ -39,4 +39,51 @@ figcaption {
   font-size: .8em;
 }
 
-/** A COMPLETER */
+/** A COMPLETER  1) Lorsque la largeur de l'affichage est comprise entre 794px et 1019px, vous changerez le fond de la page 
+pour une couleur bleue (le choix du bleu est à votre convenance). Vous afficherez alors proprement 2 vignettes par ligne, 
+avec une petite marge autour de chaque vignette.*/
+
+@media screen and (min-width:794px) and (max-width:1019px){
+  body {
+    background-color:blue;
+   
+  }
+  img {
+    display:flex;
+    flex-direction:row;
+  }
+  figure {
+    margin:5px;
+    width: 48%;
+    float:left;
+  }
+}
+/*2) Lorsque la largeur de l'affichage est supérieure à 1020px, vous changerez le fond de la page 
+pour une couleur verte (le choix du vert est à votre convenance). Vous afficherez alors proprement 
+3 vignettes par ligne, avec une petite marge autour de chaque vignette.*/
+
+@media screen and (min-width:1020px){
+  body {
+    background-color:green;
+  }
+  
+  figure {
+    width:30%;
+    float:left;
+    margin:2px;
+  }
+
+  img{
+    display:flex;
+    flex-direction:row;
+  }
+}
+/*D'autre part, vous ferez en sorte que quelle que soit la largeur finale de l'écran, votre body de devra jamais dépasser 1130px de large.*/
+
+@media screen {
+  body{
+    max-width: 1130px;
+  }
+}
+
+
