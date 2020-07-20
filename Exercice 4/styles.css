@@ -1,6 +1,6 @@
 /* ====================================
-   CSS setup ��ne rien modifier
-   �diter plus bas
+   CSS setup ��ne rien modifier
+   �diter plus bas
  * ==================================== */
 
 body { margin: 0; padding: 0; border: 0; }
@@ -14,6 +14,59 @@ li:nth-of-type(5n) { background-color: #e74c3c; }
 a { color: white; font-size: 16px; line-height: 50px; text-decoration: none; }
 
 /* ====================================
-   �diter � partir d'ici
+   �diter � partir d'ici
  * ==================================== */
 
+/*1) Présenter le menu à l'horizontal.
+ Etendre la surface cliquable à toute la surface colorée de chaque entrée. Voir résultat attendu dans resultat1.png*/
+@media screen and (orientation:landscape) {
+ul {
+display: flex;
+width:100%;
+ }
+li {
+  width:20%;/*Chaque li prend 1/5 de la taille totale de l'ul*/
+}
+a {
+  display:flex;
+  width:100%;/*Prend 100% de la largeur du parent, li*/
+  height:100%; /* Prend 100% de la hauteur du parent,li*/
+  justify-content: center;
+  align-items:center;
+}
+}
+
+
+ /*2) Présenter le menu à la verticale avec un breakpoint à 600px.
+  Les contenus se présentent à la verticale avec un breakpoint à 600px de large comme présenté 
+  dans le fichier resultat2.png*/
+
+@media screen and (orientation:portrait) and (max-width:600px){
+  ul {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+  }
+  li {
+    height:100%;
+  }
+  a {
+    display:flex;
+    width:100%;/*Prend 100% de la largeur du parent, li*/
+    height:100%; /* Prend 100% de la hauteur du parent,li*/
+    justify-content: center;
+    align-items:center;
+  }
+}
+  
+  /*3) Au survol augmentez la hauteur de l'entrée survolée (voir exemple dans resultat3.png)*/
+  
+  ul{
+    margin-top: 20px;
+    display: flex;
+  }
+  li:hover {
+   transform:scaleY(2);
+  }
+   
+   /* ul en flex pour centrer li, li à 75%, hover 100%*/
