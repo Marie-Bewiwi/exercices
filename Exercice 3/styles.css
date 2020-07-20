@@ -24,24 +24,31 @@ nav a { border-bottom: 1px solid rgba(255,255,255,.3); color: white; display: bl
  /*1) Présenter le menu à l'horizontal en résolution supérieure à 600px. Le menu a une largeur fixe de 200px. 
  Voir résultat attendu dans resultat1.png*/
 
+main{
+  height:80%;
+  display:flex;
+}
+
+
+
 
  @media screen and (min-width:600px) and (orientation:landscape) {
    nav {
     min-width:200px;
     max-width:200px;
-   }
-   main {
-     display:flex;
-     flex-basis: inherit;
+    /*Flex basis est mieux dans ce cas là*/
    }
  }
 
  /*2) Les contenus se présentent à la verticale avec un breakpoint à 600px de large. 
  Le menu passe sous l'article comme dans le fichier resultat2.png*/
  @media screen and (max-width:600px){
-   body {
-    display:flex; 
+
+   main {
+    flex-flow: column-reverse;
    }
-   
+   article {
+     flex-grow: 1;
+   }
  }
 
