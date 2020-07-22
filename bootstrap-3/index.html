@@ -13,43 +13,44 @@
     </head>
     <body>
         <div class="container-fluid text-center">
-            <h1>Décalage</h1>
-            <div>
-                <div>je dois être à 3 colonne de la gauche et faire 3 colonnes</div>
-                <div>je dois être à 4 colonnes de la div précédente et faire 2 colonnes</div>
+            <h1>Décalage</h1> <!--décalage se dit offset en anglais-->
+            <div class="row border border-info mb-2">
+                <div class="col-3 bg-primary offset-3">je dois être à 3 colonne de la gauche et faire 3 colonnes</div>
+                <div class="col-2 bg-primary offset-4">je dois être à 4 colonnes de la div précédente et faire 2 colonnes</div>
             </div>
-            <div>
-                <div>je dois être à 1 colonne de la gauche et faire 1 colonne</div>
-                <div>je dois être à 3 colonnes de la div précédente et faire 2 colonnes</div>
-                <div>je dois être à 2 colonne de la div précédente et faire 1 colonne</div>
-                <div>je dois être à 1 colonnes de la div précédente et faire 1 colonne</div>
+            <div class="row border border-info">
+                <div class="col-1 offset-1 bg-primary">je dois être à 1 colonne de la gauche et faire 1 colonne</div>
+                <div class="col-2 offset-3 bg-primary">je dois être à 3 colonnes de la div précédente et faire 2 colonnes</div>
+                <div class="col-1 offset-2 bg-primary">je dois être à 2 colonne de la div précédente et faire 1 colonne</div>
+                <div class="col-1 offset-1 bg-primary">je dois être à 1 colonnes de la div précédente et faire 1 colonne</div>
             </div>
             <h1>Contenu</h1>
-            <div>
-              <div>
+            <div class="container-fluid text-center">
+              <div class="row">
+                <div class="col-4 bg-primary">
                 Conteneur 1 : dois faire 4 colonnes
-                <div>
-                  <div>
+                <div class="row pb-3"> <!--pour que le contenu s'agrandisse à gauche-->
+                  <div class="col-4 bg-secondary">
                     Contenu 1 : dois faire 4 colonnes
                   </div>
-                  <div>
+                  <div class="col-8 bg-warning">
                     Contenu 2 :dois faire 8 colonnes
                   </div>
                 </div>
               </div>
-              <div>
+                <div class="col-8 bg-info">
                 Conteneur 2 : dois faire 8 colonnes
-                <div>
-                  <div>
+                <div class="row"> <!--Du coup, ce row prend la valeur de l'autre pour le padding-->
+                  <div class="col-6 offset-1 bg-secondary">
                     Contenu 1 : dois faire 6 colonnes et être à 1 colonne de la gauche
                   </div>
-                  <div>
+                  <div class="col-4 bg-warning">
                     contenu 2 : dois faire 4 colonnes
                   </div>
                 </div>
               </div>
             </div>
-
+          </div>
         </div>
 
 
