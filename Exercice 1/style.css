@@ -37,7 +37,9 @@ article > div { margin-left: 8px; }
 
 @media screen and (max-width:960px) {
     #question_2  div {
+        flex-direction: column;
         width:100%;
+ 
 
     }
 }
