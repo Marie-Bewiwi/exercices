@@ -13,35 +13,95 @@
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
+<!-- # Bootstrap 6 : Les Cards
 
-        <div class="container-fluid ">
+            Les cards permettent de 
+            présenter facilement des éléments sur votre site web.Ils sont flexibles et peuvent contenir plusieurs parties.
+            En vous basant sur les images fournies(bootstrap6-1, 2 et 3), créez des cards comme indiqué dans la page HTML . 
+            Les images sont présentes dans le dossier images.
+            -->
+        
+<div class="container-fluid ">
             <div class="row justify-content-center">
-                <h1>3 Cards de 3 colonnes chacunes et espacées</h1>
+                
+                <h1 class="col-12 text-center">3 Cards de 3 colonnes chacunes et espacées</h1>
+                    <div class="col-3"> 
+                        <div class="card">
+                            <img class="card-img-top" src="images/card1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Titre de la card 1</h5>
+                                    <p class="card-text">Courte description de la card 1</p>
+                                    <a href="#" class="btn btn-primary">Voyager là-bas</a>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="col-3 offset-1"> 
+                    <div class="card">
+                        <img class="card-img-top" src="images/card1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Titre de la card 2</h5>
+                                <p class="card-text">Courte description de la card 2</p>
+                                <a href="#" class="btn btn-primary">Voyager là-bas</a>
+                        </div>
+                    </div>
+              </div>
+              <div class="col-3 offset-1"> 
+                <div class="card">
+                    <img class="card-img-top" src="images/card1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Titre de la card 3</h5>
+                            <p class="card-text">Courte description de la card 3</p>
+                            <a href="#" class="btn btn-primary">Voyager là-bas</a>
+                    </div>
+                </div>
             </div>
+        </div>
             <!-- Code de la premiere partie -->
 
+            <div class="row justify-content-center">
+                    <h3 class="col-12 text-center">2 cards de 6 colonnes chacunes sans espaces entre</h3>
+                        <div class="card col-6 flex-row">
+                            <img class="card-img-left col-4" src="images/card3.jpg" alt="Card image cap">
+                            <div class="card-body col-8">
+                                <h5 class="card-title">Titre de la card 4</h5>
+                                    <p class="card-text">Courte description de la card 4</p>
+                                    <h6>Petit sous titre</h6>
+                            </div>
+                        </div>
 
-
-
+                    <div class="card col-6 flex-row">
+                        <img class="card-img-left col-4" src="images/card3.jpg" alt="Card image cap">
+                        <div class="card-body col-8">
+                            <h5 class="card-title">Titre de la card 4</h5>
+                                <p class="card-text">Courte description de la card 4</p>
+                                <h6>Petit sous titre</h6>
+                        </div>
+                    </div>
+            </div>
 
             <div class="row justify-content-center">
-                    <h3>2 cards de 6 colonnes chacunes sans espaces entre</h3>
+                <h3 class="col-12 text-center">Card columns</h3>
+                <div class='card col-3 flex-column border-0'>
+                    <img class="card-img mb-3" src="images/card1.jpg" alt="card image">
+                    <img class="card-img" src="images/card3.jpg" alt="card image">
+                </div>
+                <div class='card col-3 flex-column border-0'>
+                    <img class="card-img mb-3" src="images/card2.jpg" alt="card image">
+                    <img class="card-img mb-3" src="images/card4.jpg" alt="card image">
+                    <img class="card-img" src="images/card1.jpg" alt="card image">
+                </div>
+                <div class='card col-3 flex-column border-0'>
+                    <img class="card-img mb-3" src="images/card2.jpg" alt="card image">
+                    <img class="card-img mb-3" src="images/card5.jpg" alt="card image">
+                    <img class="card-img" src="images/card1.jpg" alt="card image">
+                </div>
+
             </div>
-            <div class="row justify-content-center">
-                    <h4>l'image fait 4 colonnes et le corps(texte, boutons, etc) de la card, 8 colonnes</h4>
-            </div>
-            <!-- Code de la deuxieme partie -->
-
-
-
-            <div class="row justify-content-center">
-                <h3>Card columns</h3>
-            </div>
-            <!-- Code de la troixieme partie -->
 
 
 
 
-        </div>
+
+</div>
     </body>
 </html>
