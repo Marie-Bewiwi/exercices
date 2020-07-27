@@ -13,6 +13,42 @@
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
+<!--Le composant modal de bootstrap vous permet de personnaliser vos boites de dialogue dans votre site, en gros, 
+    il s'agit d'ouvrir une fenetre dans votre fenetre.
 
+A l'aide de la documentation, créez un modal simple avec un bouton permettant de l'afficher et comme contenu :
+- Un titre à votre modal.
+- Un corps avec un lorem ipsum
+- Un bouton fermer qui permet à l'utilisateur de refermer cette fenetre.
+
+Pour aller plus loin, faites quelques recherches pour afficher une video youtube en background de votre modal.
+-->
+
+<!-- Le bouton qui active le modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTroll">
+    Cliquez ici pour quelque chose de ouf
+  </button>
+  
+  <!-- Le modal -->
+  <div class="modal fade" id="modalTroll"role="dialog" aria-labelledby="modalTrollLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTrollLabel">C'est très le titre du modal</h5>
+          <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span></button> <!-- c'est la croix-->
+        </div>
+        <div class="modal-body">
+            <div class="embed-responsive-item"> <!--ne pas oublier item !-->
+                <iframe  src="https://www.youtube.com/embed/-vr8SJTlACo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>Découvrez la couture avec ce super tuto !</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
     </body>
 </html>
