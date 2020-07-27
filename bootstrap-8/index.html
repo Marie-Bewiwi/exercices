@@ -16,43 +16,44 @@
 <!--Premier :
     Créez 3 éléments de 4 colonnes chacun avec un bouton au dessus(voir bootstrap8-1.png).
     Chaque bouton déroule/réenroule le texte présent dessous : collapse simple-->
+<h1>Collapse</h1>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-4">
-            <button class='btn btn-primary col-4' type="button" data-toggle="collapse" data-target="#el1" aria-expanded="false" aria-controls="el">
-                mon bouton
-            </button>
-            <div class='collapse' id="el1">
-                <div class='card card-body'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
-                    voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
-                    debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+        <div class="row">
+            <div class="col-4">
+                <button class='btn btn-primary w-100' type="button" data-toggle="collapse" data-target="#el1" aria-expanded="false" aria-controls="el">
+                    mon bouton
+                </button>
+                <div class='collapse' id="el1">
+                    <div class='card card-body'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
+                        voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
+                        debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-4">
-            <button class='btn btn-primary col-4' type="button" data-toggle="collapse" data-target="#el2" aria-expanded="false" aria-controls="el2">
-                mon bouton
-            </button>
-            <div class='collapse' id="el2">
-                <div class='card card-body'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
-                    voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
-                    debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+            <div class="col-4">
+                <button class='btn btn-primary w-100' type="button" data-toggle="collapse" data-target="#el2" aria-expanded="false" aria-controls="el2">
+                    mon bouton
+                </button>
+                <div class='collapse' id="el2">
+                    <div class='card card-body'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
+                        voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
+                        debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-4">
-            <button class='btn btn-primary col-4' type="button" data-toggle="collapse" data-target="#el3" aria-expanded="false" aria-controls="el3">
-                mon bouton
-            </button>
-            <div class='collapse' id="el3">
-                <div class='card card-body'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
-                    voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
-                    debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+            <div class="col-4">
+                <button class='btn btn-primary w-100' type="button" data-toggle="collapse" data-target="#el3" aria-expanded="false" aria-controls="el3">
+                    mon bouton
+                </button>
+                <div class='collapse' id="el3">
+                    <div class='card card-body'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
+                        voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
+                        debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
@@ -61,7 +62,69 @@
 
 <!--Deuxieme :
     Créez Accordéon de 3 éléments qui se dérouleront au clic(voir bootstap-2.png).-->
-
+<h1 class>Accordéon</h1>
+<div class ="container-fluid">
+        <div class='row'>
+            <div class="col-12">
+                <div id="accordeon">
+                    <div class="card">
+                        <div class="card-header" id="premelement">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#deroule1" aria-expanded="true" aria-controls="deroule1">
+                                Premier Element
+                            </button>
+                        </div>
+                        <div id="deroule1" class="collapse" aria-labelledby="premelement" data-parent="#accordeon">
+                            <div class="card-body">
+                            Anim pariatur cliche reprehenderit, 
+                            enim eiusmod high life accusamus terry richardson ad squid. 
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus 
+                            labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="deuxelement">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#deroule2" aria-expanded="true" aria-controls="deroule2">
+                                Deuxième élément
+                            </button>
+                        </div>
+                        <div id="deroule2" class="collapse" aria-labelledby="deuxelement" data-parent="#accordeon">
+                            <div class="card-body">
+                            Anim pariatur cliche reprehenderit, 
+                            enim eiusmod high life accusamus terry richardson ad squid. 
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus 
+                            labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="troiselement">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#deroule3" aria-expanded="true" aria-controls="deroule3">
+                                Troisième élément
+                            </button>
+                        </div>
+                        <div id="deroule3" class="collapse" aria-labelledby="troiselement" data-parent="#accordeon">
+                            <div class="card-body">
+                            Anim pariatur cliche reprehenderit, 
+                            enim eiusmod high life accusamus terry richardson ad squid. 
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus 
+                            labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
 
 
 <!--Troisieme :
@@ -69,7 +132,47 @@
     les autres éléments se replieront s'ils sont dépliés.(un seul élément pourra être déplié à la fois)  
     (data-parent est votre ami)  
 -->
-
+<h1>Collapse et fermeture</h1>
+<div class="container-fluid" id="fermeture"> <!--si je mets après la row, mes toggle prennent une forme verticale ??-->
+        <div class="row">
+            <div class="col-4">
+            <button class='btn btn-primary w-100' type="button" data-toggle="collapse" data-target="#el1bis" aria-expanded="false" aria-controls="el1bis">
+                mon bouton
+            </button>
+            <div class='collapse'  id="el1bis" data-parent="#fermeture">
+                <div class='card card-body'>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
+                    voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
+                    debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+                </div>
+            </div>
+        </div>
+            <div class="col-4">
+            <button class='btn btn-primary w-100' type="button" data-toggle="collapse" data-target="#el2bis" aria-expanded="false" aria-controls="el2bis">
+                mon bouton
+            </button>
+            <div class='collapse'  id="el2bis" data-parent="#fermeture">
+                <div class='card card-body'>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
+                    voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
+                    debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <button class='btn btn-primary w-100' type="button" data-toggle="collapse" data-target="#el3bis" aria-expanded="false" aria-controls="el3nis">
+                mon bouton
+            </button>
+            <div class='collapse'  id="el3bis" data-parent="#fermeture">
+                <div class='card card-body'>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque 
+                    voluptatum sapiente magnam sint numquam facere minima ad nemo dolore
+                    debitis ut distinctio fuga quia facilis totam, tempore praesentium itaque.
+                </div>
+            </div>
+        </div>
+            </div>
+</div>
 
 
 
