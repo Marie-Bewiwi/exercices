@@ -1,0 +1,19 @@
+ body {
+     max-width: 80%;
+     margin:auto;
+ }
+
+ #medlogo {
+     height:2em;
+     width:2em;
+ }
+ #navbar1,.btn-outline-primary,.btn {
+     color:rgb(138,43,226);
+     border-color:rgb(138,43,226) ;
+ }
+ #navbar1,#navbar2{
+    justify-content: unset;
+ }
+ #onezerologo{
+     height:2em;
+ }
