@@ -17,3 +17,17 @@
  #onezerologo{
      height:2em;
  }
+ #entete-article {
+    max-width:66%;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h4{
+    font-weight: unset;
+}
+
+#harry{
+    height:3em;
+    border-radius: 50%;
+}
