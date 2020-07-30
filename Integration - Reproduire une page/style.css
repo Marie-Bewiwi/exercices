@@ -1,5 +1,5 @@
  body {
-     max-width: 80%;
+     max-width: 100%;
      margin:auto;
  }
 
@@ -13,6 +13,8 @@
  }
  #navbar1,#navbar2{
     justify-content: unset;
+    max-width:80%;
+    margin:auto;
  }
  #onezerologo{
      height:2em;
@@ -30,4 +32,8 @@ h4{
 #harry{
     height:3em;
     border-radius: 50%;
+    float:left;
+}
+#follow {
+    height:2em;
 }

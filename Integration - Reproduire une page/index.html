@@ -13,13 +13,15 @@
 
 <body>
     <header class='container-fluid shadow'>
-        <div class='row'>
-            <nav class='col-12 navbar navbar-expend border-bottom border-light' id='navbar1'>
+        <div class='row border-bottom border-light'>
+            <nav class='col-8 navbar navbar-expend ' id='navbar1'>
                 <img id="medlogo" src='medium.svg'>
                 <a class='nav-link offset-9'>Sign in</a>
                 <button type="button" class="btn btn-outline-primary">Get started</button>
             </nav>
-            <div class='col-12 navbar navbar-expend' id="navbar2">
+        </div>
+            <div class='row'>
+            <div class='col-8 navbar navbar-expend' id="navbar2">
                 <a class='navbar-brand'>
                 <img src='one-zero.png' id='onezerologo'>
                 </a>
@@ -31,17 +33,27 @@
                         <a class="nav-item nav-link text-secondary" href="#">ABOUT</a>
                     </nav>
             </div>
-        </div>
+            </div>
     </header>
     <article class='container mt-5 justify-content-center d-flex'>
         <header id='entete-article' class='row' >
         <h1>How ‘Digital Nomads’ Game the System to Work in Paradise</h1>
         <h4 class="text-secondary">Visa scams and tax evasion are common as locals struggle with a low minimum wage</h4>
-        <div class='row'>
-            <img src="harry.jpg" id="harry" class='ml-3'> 
-            <p></p>
+        <div class='row mt-3 col-12'>
+             <div class='row col-4'>
+            <div>
+                <img src="harry.jpg" id="harry"> 
+            </div>
+            <div>
+                     <p class='mb-0 ml-2'>Harry Guinness</p> 
+                     <p class='ml-2 text-muted'> Jul 2 · 6 min read</p>
+            </div>
+            </div>
+            <div class='col-4'>
+            <button class='btn btn-outline-primary btn-sm' id='follow'>Follow</button> 
+            </div>
         </div>
         </header>
-    </article>
+     </article>
 </body>
 </html>
