@@ -11,16 +11,21 @@
      color:rgb(138,43,226);
      border-color:rgb(138,43,226) ;
  }
+ .border-light {
+     border-color:rgb(221, 221, 221) !important;
+     border-width: 1px !important ;
+ }
  #navbar1,#navbar2{
     justify-content: unset;
-    max-width:80%;
+    width:80%;
     margin:auto;
  }
  #onezerologo{
      height:2em;
  }
  #entete-article {
-    max-width:66%;
+    width:66%;
+    margin:auto;
 }
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -34,6 +39,28 @@ h4{
     border-radius: 50%;
     float:left;
 }
-#follow {
+.follow {
     height:2em;
+}
+article {
+    margin:auto;
+}
+
+#image{
+    width:80%;
+    margin:auto;
+    display:block;
+}
+
+#article__image {
+width:100%;
+margin:auto;
+display:block;
+}
+i{
+    display:block !important;
+}
+
+.fa-praying-hands{
+    color:rgb(138,43,226);
 }
