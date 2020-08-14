@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exo 8 JS</title>
+        <script>
+            //Pour commencer, il vous donne une petite liste d'aliments et des réponses qu'il souhaiterai voir :
+                //- tomate : bon pour la santé et vegan
+                //- oeuf : d'origine animale même si ça n'est pas directement leur viande
+                //- lait : d'origine animale même si ça n'est pas directement leur viande
+                //- tofu : issu du soja donc vegan mais sa culture intensive n'est pas top niveau environnement
+                //- miel : abeille = animal = non vegan
+                //- foie gras : Pire aliment non vegan
+            let aliment = prompt('Aliment?');
+            switch (aliment){
+                case 'tomate':
+                    alert('bon pour la santé et vegan');
+                    break;
+                case 'oeuf':
+                    alert('origine animale même si ça n\'est pas directement leur viande');
+                    break;
+                case 'lait':
+                    alert('d\'origine animale même si ça n\'est pas directement leur viande');
+                    break;
+                case 'tofu':
+                    alert('issu du soja donc vegan mais sa culture intensive n\'est pas top niveau environnement');
+                    break;
+                case 'miel':
+                    alert('abeille = animal = non vegan');
+                    break;
+                case 'foie gras':
+                    alert('Pire aliment non vegan');
+                    break;
+                default:
+                    alert('Pas d\'info dessus')
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Exercice 8 : You get what you switch</h1>
+        <p>Le switch</p>
+    </body>
+</html>
