@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Exo 10 JS</title>
-        <script>
-            var nbord = Math.floor(Math.random()*101);
-            var nutil = parseInt(prompt('Devinez un nombre entre 1 et 100'));
 
-            do {nutil=parseInt(prompt('Réessayez'));}
-            
-            while (nbord!=nutil);
+<head>
+    <meta charset="utf-8">
+    <title>Exo 10 JS</title>
+    <script>
+        var nbord = Math.floor(Math.random() * 101);
+        var nutil = parseInt(prompt('Devinez un nombre entre 1 et 100'));
+
+        while(nbord != nutil) { //on utilise while sinon, si l'utilisateur tombe sur le bon chiffre dès le début, il
+                                //ne rentre pas dans la boucle.
+            if (nutil > nbord) {
+                nutil = parseInt(prompt('moins'));
+            }
+            else {
+                nutil = parseInt(prompt('plus'));
+            }
+        }
 
         alert("Wahooooooo vous avez trouvé !")
-            
-                              
-        </script>
-    </head>
-    <body>
-        <h1>Exercice 10 : Récapitulons</h1>
-        <p>Le jeu du plus ou moins</p>
-    </body>
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Exercice 10 : Récapitulons</h1>
+    <p>Le jeu du plus ou moins</p>
+</body>
+
 </html>
