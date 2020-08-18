@@ -23,7 +23,7 @@ function hideAllDivs () {
 function hideAllDivs() {
     vDivs = document.getElementsByTagName('div');
     for (var i = 0; i < vDivs.length; i++) {
-        vDivs.item(i).style.display='none';
+        vDivs.item(i).style.display = 'none';
     }
 }
 
@@ -44,5 +44,51 @@ function alertTitle() {
     vIndice = document.getElementById('title').value;
     vIndice = vIndice - 1;
     alert(vHx[vIndice].textContent); /*textContent permet d'afficher le contenu de...)*/
+
 }
+
+/*4) Écrire la fonction deleteTitle permettant d'effacer le contenu du titre défini par le champ title. (suppression du nœud fils de type texte)
+
+Indice :
+function deleteTitle () {
+	...
+	vHx.item(vIndice).removeChild(...);
+}*/
+
+function deleteTitle() {
+    vHx = document.getElementsByTagName('h1');
+    vIndice = document.getElementById('title').value;
+    vIndice = vIndice - 1;
+    vHx.item(vIndice).removeChild(vHx.item(vIndice).firstChild);
+
+}
+
+/* 5) Écrire la fonction defineTitle permettant d'affecter le contenu du titre ""
+ défini par le champ title avec la valeur "Nouveau titre". On testera que le titre a ou
+  non déjà une valeur (nœud texte) avant l'ajout, afin de la supprimer si besoin.
+
+Indice : 
+function defineTitle () {
+	...
+	vText = document.createTextNode(...);
+	if (vHx.item(vIndice)...) {
+		...
+	}
+	vHx.item(vIndice).appendChild(...);
+}
+*/
+
+function defineTitle() {
+    vHx = document.getElementsByTagName('h1');
+    vIndice = document.getElementById('nbtitle').value;
+    vIndice = vIndice - 1;
+    vContTitre = document.getElementById('contenu').value;
+    vText = document.createTextNode(vContTitre);
+
+    if (vHx.item(vIndice).textContent) {
+        vHx.item(vIndice).removeChild(vHx.item(vIndice).firstChild);
+    }
+    vHx.item(vIndice).appendChild(vText);
+}
+
 
