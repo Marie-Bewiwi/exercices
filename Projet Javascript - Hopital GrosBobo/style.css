@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arvo', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#corpstext {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width:50%;
+    position: relative;
+}
+
+.btn {
+    background-color: grey;
+    border: black 2px solid;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    position: absolute;
+    opacity:0.8;
+}
+.epaule {
+    left:5px;
+    top:83px;
+}
+
+.coude {
+    left:105px;
+    top:183px;
+}
+
+.poignet{
+    left: -5px;
+    top: 215px;
+}
+
+.hanche {
+    left:80px;
+    top:230px;
+}
+
+.genou {
+    left:25px;
+    top:350px;
+}
+
+.cheville {
+    left:70px;
+    bottom:30px;
+}
+
+.active {
+    background-color :red;
+    opacity: 0.8;
+}
+
+.desc {
+    display: none;
+}
