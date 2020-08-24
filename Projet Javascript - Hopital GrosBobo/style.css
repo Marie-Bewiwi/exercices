@@ -61,3 +61,7 @@ h1 {
 .desc {
     display: none;
 }
+
+.shown {
+    display:flex;
+}
