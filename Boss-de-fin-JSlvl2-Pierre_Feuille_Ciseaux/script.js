@@ -21,67 +21,42 @@ let tableaubouton = [feuille, pierre, ciseaux];
 
 //Exo 3 
 
-function jeu(joueurclick) {
-    let choixaleatoire = tableaubouton[Math.floor(Math.random() * tableaubouton.length)];
-    let choix_joueur = joueurclick.target.id;
-    let resultat = document.querySelector("#result");
-    partie.textContent = "L'ordi a joué " + choixaleatoire.id + ", vous avez joué " + choix_joueur
-    switch (choix_joueur) {
-        case "pierre":
-            switch (choixaleatoire.id) {
-                case "feuille":
-                    resultat.textContent = "Perdu";
-                    break;
-
-                case "ciseaux":
-                    resultat.textContent = "Gagné";
-                    break;
-                case "pierre":
-                    resultat.textContent = "Egalité"
-                    break;
-            }
-            break;
-
-        case "feuille":
-            switch (choixaleatoire.id) {
-                case "feuille":
-                    resultat.textContent = "Egalité";
-                    break;
-
-                case "ciseaux":
-                    resultat.textContent = "Perdu";
-                    break;
-                case "pierre":
-                    resultat.textContent = "Gagné"
-                    break;
-            }
-            break;
-
-        case "ciseaux":
-            switch (choixaleatoire.id) {
-                case "feuille":
-                    resultat.textContent = "Gagné";
-                    break;
-
-                case "ciseaux":
-                    resultat.textContent = "Egalité";
-                    break;
-                case "pierre":
-                    resultat.textContent = "Perdu"
-                    break;
-            }
-            break;
-        
-            default:
-            resultat.textContent = 'Oups, petit bug ! '
-    }
-}
 
 feuille.addEventListener('click', jeu)
 pierre.addEventListener('click', jeu)
 ciseaux.addEventListener('click', jeu)
 
 
+
+function jeu(joueurclick) {
+    let choixaleatoire = tableaubouton[Math.floor(Math.random() * tableaubouton.length)].id;
+    let choix_joueur = joueurclick.target.id;
+    let resultat = document.querySelector("#result");
+    partie.textContent = "L'ordi a joué " + choixaleatoire + ", vous avez joué " + choix_joueur
+
+    switch (true) { // hack pour tester les conditions directement les cases 
+        case choix_joueur === 'pierre' && choixaleatoire === 'feuille':
+        case choix_joueur === 'feuille' && choixaleatoire === 'ciseaux':
+        case choix_joueur === 'ciseaux' && choixaleatoire === 'pierre':
+            resultat.textContent = "Perdu"
+            break;
+
+        case choix_joueur === 'pierre' && choixaleatoire === 'pierre':
+        case choix_joueur === 'feuille' && choixaleatoire === 'feuille':
+        case choix_joueur === 'ciseaux' && choixaleatoire === 'ciseaux':
+            resultat.textContent = "Egalité"
+            break;
+
+        case choix_joueur === 'pierre' && choixaleatoire === 'ciseaux':
+        case choix_joueur === 'feuille' && choixaleatoire === 'pierre':
+        case choix_joueur === 'ciseaux' && choixaleatoire === 'feuille':
+            resultat.textContent = "Gagné"
+            break;
+
+        default:
+            resultat.textContent = 'Oups, petit bug ! '
+    }
+}
 
 
 
