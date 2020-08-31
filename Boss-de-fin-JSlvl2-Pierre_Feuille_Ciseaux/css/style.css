@@ -43,6 +43,7 @@ button:active{
 i{
     font-size: 3em;
     color: white;
+    pointer-events: none; /* Les i ne deviennent plus clickable, règle pb d'affichage des id */
 }
 
 #result {
