@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 2</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#bloc1 {
+			width: 500px ;
+			height: 400px ;
+			background-color: lightblue ;
+		}
+
+		#paragraphe1 {
+			color: green ;
+		}
+
+		#paragraphe2 {
+			color: red ;
+		}
+
+	</style>
+
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', (event) => {
+    let boutons = document.getElementsByTagName("button");
+	let bouton1 = boutons[0]
+	let bouton2 = boutons[1];
+	let bloc = document.getElementById('bloc1');
+	let par1 = document.getElementById('paragraphe1')
+	let par2 = document.getElementById('paragraphe2')
+	let paragraphes = document.querySelectorAll('#paragraphe1,#paragraphe2')
+
+bouton1.addEventListener('click', function () {changeBgColor('yellow')})
+bouton2.addEventListener('click', changeTextColor)
+par1.addEventListener('mouseover', hover)
+par2.addEventListener('mouseover', hover)
+par1.addEventListener('mouseout', hover )
+par2.addEventListener('mouseout', hover) 
+
+
+
+	function changeBgColor (color) {
+		bloc.style.backgroundColor = color;
+	}
+
+	function changeTextColor () {
+		for (let i=0 ; i<paragraphes.length; i++){
+			paragraphes[i].style.color = 'black'
+		}
+	}
+
+	function hover () {
+		if (this.style.color == "white") { // c'est par1 ou par2 qui sont ciblés
+			this.style.color = "black";
+		}
+		else {
+			this.style.color = 'white';
+		}
+		
+		
+	}
+
+});
+	
+
+	</script>
+</head>
+<body>
+	<div id="bloc1">
+		<p id="paragraphe1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		
+		<p id="paragraphe2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<button>Modifier fond</button>
+	<button>Modifier texte</button>
+
+
+</body>
+</html>
