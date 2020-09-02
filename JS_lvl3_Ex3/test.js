@@ -18,26 +18,12 @@ function a_d() {
     let str1 = document.getElementById('test1').textContent;
     switch (str1[0]) {
         case "a":
-            alert("cette chaîne est valide")
-            break;
         case "A":
-            alert("cette chaîne est valide")
-            break;
         case "b":
-            alert("cette chaîne est valide")
-            break;
         case "B":
-            alert("cette chaîne est valide")
-            break;
         case "c":
-            alert("cette chaîne est valide")
-            break;
         case "C":
-            alert("cette chaîne est valide")
-            break;
         case "d":
-            alert("cette chaîne est valide")
-            break;
         case "D":
             alert("cette chaîne est valide")
             break;
@@ -45,5 +31,24 @@ function a_d() {
             alert('cette chaîne n\'est pas valide')
             break;
     }
-
 }
+/* une autre solution, plus efficace, made in David xD 
+
+let letters = ['a', 'A', 'b', 'B', 'c', 'C', 'd', 'D']
+
+/**
+ * Est-ce que "lettre" est égale à la 1ère lettre de str1 ?
+ */
+//function isLetterValid(lettre) {
+//    return lettre===str1[0]
+//}
+
+/**
+ * Est-ce que "str1" commence par 1 des lettres de "letters" ?
+ */
+//function isValid() {
+  //  alert(letters.some(isLetterValid) ? "cette chaîne est valide" : 'cette chaîne n\'est pas valide')
+//}
+//some attend en paramètre une fonction qui renvoie "true" ou "false"
+//some applique cette fonction pour chaque élément du tableau
+//Si un de ces éléments renvoie "true" après être passé par la fonction,  some renvoie "true"
