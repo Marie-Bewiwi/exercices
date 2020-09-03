@@ -1,8 +1,7 @@
-let str1 = document.getElementById('test1').textContent;
-let str2 = document.getElementById('test2').textContent;
-let str3 = document.getElementById('test3').textContent;
-let str4 = document.getElementById('test4').textContent;
-console.log(str1, str2, str3, str4)
+
+
+
+
 
 let bouton1 = document.getElementById('test_a-d')
 let bouton2 = document.getElementById('test_1_@')
@@ -10,9 +9,9 @@ let bouton3 = document.getElementById('test_chiffre')
 let bouton4 = document.getElementById('remplace_chiffre')
 
 bouton1.addEventListener('click', a_d)
-bouton2.addEventListener('click',)
-bouton3.addEventListener('click',)
-bouton4.addEventListener('click',)
+bouton2.addEventListener('click', testarobase)
+bouton3.addEventListener('click', testchiffre)
+bouton4.addEventListener('click',replacenumber)
 
 function a_d() {
     let str1 = document.getElementById('test1').textContent;
@@ -32,7 +31,43 @@ function a_d() {
             break;
     }
 }
-/* une autre solution, plus efficace, made in David xD 
+
+function testarobase() {
+    let str2 = document.getElementById('test2').textContent;
+    let compteur = 0;
+    for (let i = 0; i < str2.length; i++) {
+        if (str2[i] === "@") {
+            compteur++;
+        }
+    }
+    if (compteur > 1 || compteur === 0) {
+        alert('cette chaîne est invalide');
+    }
+    else {
+        alert('cette chaîne est valide')
+    }
+}
+
+function testchiffre() {
+    //j'ai utilisé une regex parce que isNaN me freinait plus qu'autre chose (enlever espaces etc)
+    let str3 = document.getElementById('test3').textContent;
+    let regex = /[0-9]/
+    if (str3.match(regex)) {
+        alert ('cette chaîne est valide')
+    }
+    else {
+        alert ('cette chaîne est invalide')
+    }
+}
+
+function replacenumber () {
+    let test4 = document.getElementById('test4')
+    let str4 = test4.textContent;
+    let regex2 = /[0-9]/g
+    let nouveautext = str4.replaceAll (regex2, '*')
+    test4.textContent = nouveautext
+}
+/* une autre solution, plus efficace, made in David xD
 
 let letters = ['a', 'A', 'b', 'B', 'c', 'C', 'd', 'D']
 
