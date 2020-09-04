@@ -3,6 +3,7 @@
 
 
 
+
 let bouton1 = document.getElementById('test_a-d')
 let bouton2 = document.getElementById('test_1_@')
 let bouton3 = document.getElementById('test_chiffre')
