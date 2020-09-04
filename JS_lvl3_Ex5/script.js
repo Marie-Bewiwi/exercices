@@ -1,10 +1,14 @@
 do {
-age = Number(prompt("Age ?"))}
-while (isNaN(age));
-if (isNaN(age)) {
-    alert("Veuillez entrer un entier")
-}
-else if (age < 18) {
+    age = Number(prompt("Age ?"))
+    if (isNaN(age)) {
+        alert("Veuillez entrer un entier")}
+        else if (age<0) {
+            alert("Veuillez entrer un entier")
+        }
+    }
+while (isNaN(age)||age<0);
+
+if (age < 18) {
     alert("vous n'avez pas le droit de venir sur ce site")
 }
 else if (age >= 18 && age <= 50) {
