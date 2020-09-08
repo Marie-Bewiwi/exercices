@@ -13,20 +13,41 @@ let losange = document.querySelector('.losange')
 
 boutonremplir.addEventListener('click', fill)
 boutonvider.addEventListener('click', empty)
-carres.forEach(function (elem,index) {
+carres.forEach(function (elem, index) {
     elem.addEventListener("click", function () {
         let colonnes = lignes[index].querySelectorAll('td');
-        for (let k = 0; k < colonnes.length; k++) { 
-            colonnes[k].classList.add('plein')
+        if (elem.classList.contains('plein')) {
+            for (let k = 0; k < colonnes.length; k++) {
+                colonnes[k].classList.remove('plein')
+            }
         }
-    });
+        else {
+            for (let k = 0; k < colonnes.length; k++) {
+                colonnes[k].classList.add('plein')
+            }
+        }
+
+        });
 });
-losange.addEventListener('click',remplircroix) 
+losange.addEventListener('click', remplircroix)
 function remplircroix() {
-for (let l = 0; l < colonne3.length ; l++) {
-        colonne3[l].classList.add('plein')
+    if (losange.classList.contains('plein')) {
+        for (let l = 0; l < colonne3.length; l++) {
+            colonne3[l].classList.remove('plein')
+        }
+        for (let m = 0; m < ligne3.length; m++) {
+            ligne3[m].classList.remove('plein')
+        }
     }
-   
+    else {
+        for (let l = 0; l < colonne3.length; l++) {
+            colonne3[l].classList.add('plein')
+        }
+        for (let m = 0; m < ligne3.length; m++) {
+            ligne3[m].classList.add('plein')
+        }
+
+    }
 }
 
 function fill() {
