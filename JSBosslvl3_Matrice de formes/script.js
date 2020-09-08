@@ -7,14 +7,16 @@ let ligne2 = document.querySelectorAll('#ligne2 td')
 let ligne3 = document.querySelectorAll('#ligne3 td')
 let ligne4 = document.querySelectorAll('#ligne4 td')
 let ligne5 = document.querySelectorAll('#ligne5 td')
-
+let lignes = document.querySelectorAll('#ligne1,#ligne2,#ligne4,#ligne5')
+//let colonne3 = document.querySelector('.ligne td:nth-of-type(3)')
 
 boutonremplir.addEventListener('click', fill)
 boutonvider.addEventListener('click', empty)
-carres.forEach(function (elem,index) {
+carres.forEach(function (elem,index) { //coucou c'est le bordel
     elem.addEventListener("click", function () {
-        for (let k = 0; k < ligne1.length; k++) {
-            ligne1[k].classList.add('plein')
+        let colonnes = lignes[index].querySelectorAll('td');
+        for (let k = 0; k < colonnes.length; k++) { //ici ça merde ? 
+            colonnes[k].classList.add('plein')
         }
     });
 });
